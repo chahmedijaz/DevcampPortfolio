@@ -1,0 +1,18 @@
+<h1>Add New Portfolio</h1>
+
+<%= form_with(model: @portfolio_item) do |form| %>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :subtitle, style: "display: block" %>
+    <%= form.text_field :subtitle %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
