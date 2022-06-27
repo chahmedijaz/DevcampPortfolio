@@ -4,8 +4,10 @@ class PagesController < ApplicationController
   end
 
   def about
+    @portfolios = Portfolio.all
   end
 
   def contact
+    @skills = Skill.all
   end
 end
