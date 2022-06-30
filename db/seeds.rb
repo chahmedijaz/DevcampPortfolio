@@ -40,4 +40,9 @@ end
 
 puts ("#{PORTFOLIO_COUNT} portfolios are created!")
 
-puts ("#{BLOG_COUNT+SKILL_COUNT+PORTFOLIO_COUNT} records are created!")
+#TOPICS DATA
+Topic.create!(title: 'Programming')
+Topic.create!(title: 'Databases')
+Topic.create!(title: 'Algorithms')
+
+puts("#{3} topics are created!")
